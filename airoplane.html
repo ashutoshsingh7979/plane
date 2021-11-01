@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes plane {
+            from{
+               width: 20px;
+               height: 70px;
+               
+               
+            }
+            to{
+                width: 700px;
+                height: 500px;
+            
+            }
+           
+        }
+        @keyframes plane2 {
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{
+                transform: rotate(0deg);
+               
+            }
+            21%{
+              transform: rotate(10deg); 
+            }
+          50%{
+              transform: rotate(30deg);
+          }
+          60%{
+              transform: rotate(0deg);
+          }
+        }
+
+        .box{
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-top: 15%;
+             /* transform: rotate(20deg); */
+            animation-name: plane;
+            animation-direction: reverse;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+
+        }
+        .img{
+            animation-name: plane2;
+            animation-direction: alternate;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        
+    </style>
+</head>
+<body> <div class="box"><div class="img"><img src="vu2kdxpg-900.jpg" width="300px"  alt="error"></div></div>
+    
+</body>
+</html>
